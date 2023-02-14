@@ -1,4 +1,4 @@
-# Facekom feladat
+# Facekom task
 
 ## Simply run
 ```
