@@ -6,7 +6,7 @@ echo "$1"
 echo -e ">=================================<\n"
 }
 
-# https://docs.docker.com/engine/install/ubuntu alapjan
+# based on https://docs.docker.com/engine/install/ubuntu
 header "remove older versions of docker"
 sudo apt remove docker docker-engine docker.io containerd runc
 
@@ -24,11 +24,14 @@ header "install docker packages"
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-## fenti lepeseket automatizalja
+header "append ubuntu user to docker group"
+sudo usermod -a -G docker ubuntu
+
+## it is for quick & easy install
 ##curl -fsSL https://get.docker.com -o get-docker.sh
 ##sudo sh get-docker.sh
 
-header "change permissions on certs dir and certificates"
+header "change permissions on certs directory and the files in it"
 chmod 750 certs
 chmod 400 certs/key.pem
 chmod 440 certs/cert.chained.pem
