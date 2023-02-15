@@ -12,7 +12,7 @@ You need to copy *chained certificate* and *key* files to **certs** directory su
 $ cp ~/cert.chained.crt certs
 $ cp ~/key.pem certs
 ```
-Both the certificate and the key files need to be PEM formatted.
+Both the certificate and key files need to be PEM formatted.
 
 ## Bootstrap Docker and start NGINX container
 ```
