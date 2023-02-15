@@ -1,6 +1,6 @@
 # Facekom task
 
-## Prerequisites before you run the application
+## Prerequisites
 Clone this repository
 ```
 $ git clone https://github.com/zoltantamas76/facekom.git
@@ -14,9 +14,8 @@ $ cp ~/key.pem certs
 ```
 Both the certificate and the key files need to be PEM formatted.
 
-## Install Docker service and run the application
+## Install Docker and run the application
 ```
 $ ./docker-bootstrap.sh
-
 $ docker compose up -d
 ```
