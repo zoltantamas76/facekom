@@ -15,7 +15,7 @@ $ cp ~/key.pem certs
 Both the certificate and key files have to be PEM formatted.
 
 ## Bootstrap Docker and start up NGINX container
-This simple bootstrap script configures official Docker repository, installs necessary packages and sets stricter file permissions on *certs* directory and *key.pem* file. Docker compose just starts up the NGINX container (port opening, volume mounting).
+This simple bootstrap script configures official Docker repository, installs necessary packages and sets stricter file permissions on *certs* directory and *key.pem* file. Docker compose just starts up the NGINX container (exposes ports, mounts volumes and sets capabilities).
 ```
 $ ./docker-bootstrap.sh
 $ docker compose up -d
