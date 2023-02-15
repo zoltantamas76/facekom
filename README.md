@@ -1,4 +1,4 @@
-# Facekom task
+# FaceKom task
 
 ## Prerequisites
 Clone this repository
