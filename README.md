@@ -1,5 +1,3 @@
-# FaceKom task
-
 ## Prerequisites
 Clone this repository
 ```
