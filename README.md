@@ -14,7 +14,7 @@ $ cp ~/key.pem certs
 ```
 Both the certificate and the key files need to be PEM formatted.
 
-## Install Docker and run the application
+## Bootstrap Docker and run the application
 ```
 $ ./docker-bootstrap.sh
 $ docker compose up -d
